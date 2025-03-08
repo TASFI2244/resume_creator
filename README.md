@@ -3,9 +3,13 @@ Resume Creator is a web-based application that allows users to build and generat
 
 Features 🚀
 ✅ User authentication (login & registration)
+
 ✅ Step-by-step resume creation (Personal Info → Skills → Education → Experience → Projects)
+
 ✅ Data storage in MySQL database
+
 ✅ PDF resume generation with TCPDF
+
 ✅ Options to skip or submit sections
 
 💡 Tech Stack: PHP, MySQL, HTML, CSS, JavaScript, TCPDF
