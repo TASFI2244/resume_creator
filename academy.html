@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Background</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 400px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 48%;
+    }
+
+    .skip-btn {
+      background-color: #f44336;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Academic Background</h2>
+    <form id="academic-form">
+      <label for="institute">Institute Name</label>
+      <input type="text" id="institute" name="institute" placeholder="Enter institute name">
+
+      <label for="degree">Degree</label>
+      <select id="degree" name="degree">
+        <option value="">Select your degree</option>
+        <option value="Diploma Degree">Diploma Degree</option>
+        <option value="Bachelor's Degree">Bachelor's Degree</option>
+        <option value="Master's Degree">Master's Degree</option>
+        <option value="Professional Degree">Professional Degree</option>
+        <option value="Doctoral Degree">Doctoral Degree</option>
+        <option value="Higher Secondary Education">Higher Secondary Education</option>
+        <option value="Undergraduate">Undergraduate</option>
+        <option value="Secondary Education">Secondary Education</option>
+      </select>
+
+      <label for="year">Year of Completion</label>
+      <input type="text" id="year" name="year" placeholder="Enter year">
+
+      <label for="grade">Grade</label>
+      <input type="text" id="grade" name="grade" placeholder="Enter grade">
+
+      <div class="buttons">
+        <button type="button" class="skip-btn" onclick="skipForm()">Skip</button>
+        <button type="submit">Next</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("academic-form").addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent form submission
+      window.location.href = "experience.html"; // Redirect to experience.html
+    });
+
+    function skipForm() {
+      window.location.href = "experience.html"; // Redirect without form submission
+    }
+  </script>
+
+</body>
+
+</html>

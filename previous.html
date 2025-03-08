@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Projects & Publications</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Previous Projects & Publications</h2>
+        <form action="previous.php" method="POST">
+            <label for="project_title">Project Title</label>
+            <input type="text" id="project_title" name="project_title" placeholder="Enter project title">
+
+            <label for="description">Project Description</label>
+            <textarea id="description" name="description" placeholder="Describe your project"></textarea>
+
+            <label for="publication">Publication (if any)</label>
+            <input type="text" id="publication" name="publication" placeholder="Enter publication title">
+
+            <div class="buttons">
+                <button type="submit" name="skip" class="btn-skip">Skip</button>
+                <button type="submit" name="submit" class="btn-next">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        text-align: left;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn-skip {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .btn-next {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .register-container {
+            background: #fff;
+            padding: 30px;
+            width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .file-input {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form action="register.php" method="POST" enctype="multipart/form-data">
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" placeholder="Enter full name" required>
+
+            <label for="contact">Contact Information:</label>
+            <input type="text" name="contact" placeholder="Enter phone/email" required>
+
+            <label for="photo">Upload Photo (JPG/PNG):</label>
+            <input type="file" name="photo" accept="image/jpeg, image/png" class="file-input" required>
+
+            <label for="bio">Short Bio:</label>
+            <textarea name="bio" rows="3" placeholder="Write a short bio..." required></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+        <br>
+        <button onclick="location.href='skill.html'">Next</button>
+    </div>
+</body>
+
+</html>
